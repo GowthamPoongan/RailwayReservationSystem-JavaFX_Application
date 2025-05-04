@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+<VBox xmlns="http://javafx.com/javafx/8.0.171"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.example.railway.controller.settingsController"
+      spacing="20" alignment="CENTER" style="-fx-padding: 30;">
+    <Label text="⚙️ Settings" style="-fx-font-size: 24px; -fx-font-weight: bold;" />
+    <Label text="Profile and application settings go here." style="-fx-text-fill: gray;" />
+</VBox>

@@ -1,0 +1,71 @@
+.radio-bar {
+    -fx-padding: 10 0 0 20;
+}
+
+.radio-bold {
+    -fx-font-weight: bold;
+    -fx-text-fill: #000000;
+}
+
+.search-container {
+    -fx-background-color: #ffffff;
+    -fx-padding: 20;
+    -fx-border-radius: 15;
+    -fx-background-radius: 15;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.1), 10, 0, 0, 5);
+}
+
+.field-box {
+    -fx-padding: 0 10;
+}
+
+.field-label {
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #222;
+}
+
+.station-label {
+    -fx-text-fill: #444;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+}
+
+.search-button {
+    -fx-background-color: #2979ff;          /* Blue */
+    -fx-text-fill: white;                   /* White text */
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+    -fx-padding: 10 30;                     /* Bigger click area */
+    -fx-background-radius: 25;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.2), 10, 0.3, 0, 3);
+    -fx-cursor: hand;
+    -fx-border-color: transparent;
+}
+
+.search-button:hover {
+    -fx-background-color: #1c5fd3;          /* Darker on hover */
+}
+/* searchbar.css */
+
+.combo-box, .date-picker {
+    -fx-background-radius: 8;
+    -fx-border-radius: 8;
+    -fx-border-color: #ccc;
+    -fx-background-color: #fff;
+    -fx-padding: 6 12;
+    -fx-font-size: 14px;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.1), 4, 0.1, 0, 1);
+}
+
+/* Hover and focus effect */
+.combo-box:hover, .date-picker:hover {
+    -fx-border-color: #2979ff;
+}
+
+.combo-box:focused, .date-picker:focused {
+    -fx-border-color: #2979ff;
+    -fx-background-color: #eef5ff;
+}
+
+

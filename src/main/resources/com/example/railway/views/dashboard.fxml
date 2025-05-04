@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane fx:id="mainPane" prefHeight="600" prefWidth="1000" stylesheets="@../css/dashboard.css" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.railway.controller.dashboardController">
+
+    <left>
+        <VBox fx:id="leftContent" alignment="TOP_LEFT" prefHeight="624.0" prefWidth="254.0" spacing="20" styleClass="left-content">
+            <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="90.0" prefWidth="177.0">
+                <children>
+                    <ImageView fitHeight="95.0" fitWidth="133.0" layoutX="40.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true" scaleX="2.0" scaleY="1.9">
+                        <image>
+                            <Image url="@../images/Train_logo.png" />
+                        </image>
+                    </ImageView>
+                </children>
+            </AnchorPane>
+
+            <Label alignment="CENTER" prefHeight="34.0" prefWidth="175.0" styleClass="title-label" text="Railway">
+                <font>
+                    <Font size="19.0" />
+                </font>
+            </Label>
+
+            <Button fx:id="dashboardMenuButton" styleClass="nav-button" text="Dashboard" onAction="#loadDashboardView">
+                <graphic>
+                    <ImageView fitHeight="20" fitWidth="20">
+                        <Image url="@../images/destinations.png" />
+                    </ImageView>
+                </graphic>
+            </Button>
+            <Button styleClass="nav-button" text="Search Trains">
+                <graphic>
+                    <ImageView fitHeight="20" fitWidth="20">
+                        <Image url="@../images/search.png" />
+                    </ImageView>
+                </graphic>
+            </Button>
+            <HBox spacing="5" alignment="CENTER_LEFT">
+                <Button fx:id="myBookingsButton" text="My Bookings" onAction="#loadMyBookings" styleClass="nav-button">
+                    <graphic>
+                        <ImageView fitHeight="20" fitWidth="20">
+                            <Image url="@../images/calendar.png" />
+                        </ImageView>
+                    </graphic>
+                </Button>
+                <Label fx:id="badgeLabel" styleClass="badge-label" visible="false"/>
+            </HBox>
+
+            <Button styleClass="nav-button" text="Saved Places">
+                <graphic>
+                    <ImageView fitHeight="20" fitWidth="20">
+                        <Image url="@../images/saved-places.png" />
+                    </ImageView>
+                </graphic>
+            </Button>
+            <Button styleClass="nav-button" text="Account">
+                <graphic>
+                    <ImageView fitHeight="20" fitWidth="20">
+                        <Image url="@../images/account.png" />
+                    </ImageView>
+                </graphic>
+            </Button>
+            <Button styleClass="nav-button" text="Settings">
+                <graphic>
+                    <ImageView fitHeight="20" fitWidth="20">
+                        <Image url="@../images/settings.png" />
+                    </ImageView>
+                </graphic>
+            </Button>
+
+            <Button fx:id="logoutButton" text="Logout" onAction="#handleLogout" styleClass="logout-button" />
+
+        </VBox>
+    </left>
+
+    <top>
+        <HBox alignment="TOP_RIGHT" spacing="10" styleClass="top-bar">
+            <padding>
+                <Insets bottom="0" left="10" right="10" top="0" />
+            </padding>
+        </HBox>
+    </top>
+
+    <center>
+           <fx:include source="dashboard_home.fxml"/>
+    </center>
+</BorderPane>

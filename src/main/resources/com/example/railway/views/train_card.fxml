@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.geometry.*?>
+
+<VBox fx:controller="com.example.railway.controller.trainCardController"
+      xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      spacing="10" styleClass="train-card" alignment="TOP_LEFT">
+    <Label fx:id="trainName" styleClass="train-name"/>
+    <Label fx:id="timing" styleClass="train-time"/>
+    <Label fx:id="fare" styleClass="train-fare"/>
+    <Label fx:id="route" styleClass="train-route"/>
+    <Button fx:id="bookButton" text="Book Ticket" styleClass="search-button"/>
+</VBox>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="TOP_CENTER" prefHeight="624.0" prefWidth="760.0" spacing="20" styleClass="center-pane"
+      xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="com.example.railway.controller.dashboardController">
+    <children>
+    <HBox alignment="CENTER" prefHeight="91.0" prefWidth="733.0" spacing="20" styleClass="header-box">
+        <Label fx:id="welcomeLabel" styleClass="welcome-label" text="👋 Welcome, User!" /> <ImageView fitHeight="80" fitWidth="80">
+        <image>
+            <Image url="@../images/user-profile.png" />
+        </image>
+    </ImageView>
+        <Label prefHeight="44.0" prefWidth="353.0" styleClass="quote-label" text="💬 “Travel is the only thing you buy that makes you richer.”" />
+    </HBox>
+
+    <HBox spacing="20" alignment="CENTER">
+        <RadioButton text="Book Train Tickets" selected="true" styleClass="radio"/>
+        <RadioButton text="Check PNR Status" styleClass="radio"/>
+        <RadioButton text="Live Train Status" styleClass="radio"/>
+    </HBox>
+
+    <HBox spacing="15" alignment="CENTER" styleClass="searchbar-container">
+        <VBox>
+            <Label text="From" styleClass="dropdown-label"/>
+            <ComboBox fx:id="fromCombo" styleClass="combo-box" />
+        </VBox>
+        <VBox>
+            <Label text="To" styleClass="dropdown-label"/>
+            <ComboBox fx:id="toCombo" onAction="#updateSummary" styleClass="combo-box"/>
+        </VBox>
+        <VBox>
+            <Label text="Travel Date" styleClass="dropdown-label"/>
+            <DatePicker fx:id="datePicker" onAction="#updateSummary" styleClass="date-picker"/>
+        </VBox>
+        <VBox>
+            <Label text="Class" styleClass="dropdown-label"/>
+            <ComboBox fx:id="classCombo" onAction="#updateSummary" styleClass="combo-box"/>
+        </VBox>
+        <Button fx:id="searchBtn" text="Search" onAction="#onSearchClicked" styleClass="search-button"/>
+
+    </HBox>
+    <FlowPane fx:id="summaryBox" hgap="10" vgap="10" alignment="CENTER" styleClass="summary-box" />
+    <ScrollPane fx:id="resultsScrollPane" fitToWidth="true" prefHeight="300" styleClass="result-scroll">
+        <VBox fx:id="resultsContainer" spacing="15" styleClass="results-container"/>
+    </ScrollPane>
+</children>
+</VBox>

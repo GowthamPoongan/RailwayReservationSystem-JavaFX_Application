@@ -1,0 +1,358 @@
+/* Combined CSS */
+
+.root {
+    -fx-background-color: #f9f9f9;
+    -fx-font-family: "Segoe UI", sans-serif;
+}
+
+.left-content {
+    -fx-padding: 20px;
+}
+
+.title-label {
+    -fx-font-size: 20px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #333;
+    -fx-padding: 5 0;
+}
+
+.nav-button {
+    -fx-pref-width: 180px;
+    -fx-padding: 10 20;
+    -fx-background-color: transparent;
+    -fx-text-fill: #333;
+    -fx-font-size: 14px;
+    -fx-background-radius: 20;
+    -fx-border-color: #8ab4f8;
+    -fx-border-width: 2px;
+    -fx-border-radius: 20;
+    -fx-alignment: center-left;
+    -fx-graphic-text-gap: 10;
+}
+
+.nav-button:hover {
+    -fx-background-color: rgba(138, 180, 248, 0.2);
+}
+
+.logout-button {
+    -fx-text-fill: white;
+    -fx-background-color: #ff4d4d;
+    -fx-padding: 10 20;
+    -fx-background-radius: 10;
+}
+
+.logout-button:hover {
+    -fx-background-color: #e60000;
+}
+
+.top-bar {
+    -fx-padding: 0 10;
+    -fx-background-color: transparent;
+}
+
+.center-pane {
+    -fx-spacing: 30;
+    -fx-padding: 20;
+    -fx-alignment: top-center;
+}
+
+/* Welcome section */
+.welcome-label {
+    -fx-font-size: 26px; /* Overriding with the larger size */
+    -fx-font-weight: bold;
+    -fx-font-family: "Segoe UI", sans-serif; /* Adding font family */
+    -fx-text-fill: #333; /* Adding text color */
+}
+
+.welcome-sub-label {
+    -fx-font-size: 16px;
+    -fx-text-fill: #666;
+    -fx-font-weight: bold;
+}
+
+.quote-label {
+    -fx-font-size: 22px;
+    -fx-font-weight: bold;
+    -fx-font-family: "Segoe UI", sans-serif;
+}
+
+/* Dropdown labels */
+.dropdown-label {
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+}
+
+/* Summary Box Styles */
+.summary-box {
+    -fx-padding: 10;
+    -fx-background-color: white;
+    -fx-border-color: white;
+    -fx-border-radius: 12;
+    -fx-background-radius: 12;
+    -fx-effect: dropshadow(one-pass-box, rgba(0,0,0,0.15), 5, 0, 2, 2);
+}
+
+.summary-box Label {
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+}
+
+/* Others (sidebar, buttons etc.) */
+.menu-btn {
+    -fx-background-radius: 20;
+    -fx-border-color: #5ba2ff;
+    -fx-font-size: 14px;
+    -fx-cursor: hand;
+}
+
+.logout-btn {
+    -fx-background-color: #ff4f4f;
+    -fx-text-fill: white;
+    -fx-background-radius: 10;
+}
+
+.searchbar-container {
+    -fx-padding: 20;
+    -fx-background-color: white;
+    -fx-border-radius: 12;
+    -fx-background-radius: 12;
+    -fx-effect: dropshadow(one-pass-box, rgba(0,0,0,0.1), 6, 0, 3, 3);
+}
+
+.search-btn {
+    -fx-background-color: linear-gradient(to right, #007BFF, #0056D2);
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-padding: 8 24 8 24;
+    -fx-background-radius: 18;
+}
+.summary-box {
+    -fx-padding: 10;
+    -fx-background-color: transparent;
+}
+
+.summary-box .summary-label {
+    -fx-background-color: #f0f0f0;
+    -fx-padding: 8 12;
+    -fx-border-radius: 10;
+    -fx-background-radius: 10;
+    -fx-border-color: #ccc;
+    -fx-font-weight: bold;
+}
+.search-button {
+    -fx-background-color: #2979ff; /* Blue background */
+    -fx-text-fill: white;          /* White text */
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+    -fx-padding: 10 30;
+    -fx-background-radius: 25;
+    -fx-cursor: hand;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.25), 10, 0.3, 0, 3);
+    -fx-border-color: transparent;
+}
+
+.search-button:hover {
+    -fx-background-color: #1c5fd3; /* Slightly darker on hover */
+}
+.train-card {
+    -fx-background-color: white;
+    -fx-padding: 15;
+    -fx-spacing: 10;
+    -fx-border-radius: 12;
+    -fx-background-radius: 12;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.1), 10, 0, 0, 2);
+}
+
+.search-button {
+    -fx-background-color: #1e88e5;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-background-radius: 10;
+}
+
+.bookings-view .title {
+    -fx-font-size: 18;
+    -fx-font-weight: bold;
+}
+.badge-label {
+    -fx-background-color: red;
+    -fx-text-fill: white;
+    -fx-padding: 2 6 2 6;
+    -fx-background-radius: 10;
+}
+/* Train Card Styles */
+.train-card {
+    -fx-background-color: white;
+    -fx-padding: 15px;
+    -fx-spacing: 10px;
+    -fx-border-radius: 10px;
+    -fx-background-radius: 10px;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.1), 10, 0, 0, 2);
+    -fx-border-color: #ddd; /* Optional border */
+    -fx-border-width: 1px; /* Optional border */
+}
+
+/* Style for the "Book Ticket" button within the train card */
+.train-card .search-button {
+    -fx-background-color: #2979ff; /* Blue background */
+    -fx-text-fill: white;          /* White text */
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-padding: 8 15;
+    -fx-background-radius: 20;
+    -fx-cursor: hand;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.2), 8, 0.2, 0, 2);
+    -fx-border-color: transparent;
+}
+
+.train-card .search-button:hover {
+    -fx-background-color: #1c5fd3;
+}/* Slightly darker on hover */
+.section-title {
+    -fx-font-size: 24px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #333; /* Adjust color as needed */
+    -fx-padding: 10px 0; /* Add some vertical padding */
+}
+.booking-item {
+    -fx-border-color: #ddd;
+    -fx-border-width: 1px;
+    -fx-border-radius: 5px;
+    -fx-background-color: #f9f9f9;
+}
+
+.booking-label-header {
+    -fx-font-weight: bold;
+    -fx-text-fill: #555;
+}
+.dialog-pane {
+    -fx-background-radius: 12;
+    -fx-border-radius: 12;
+}
+.combo-box {
+    -fx-background-radius: 10;
+    -fx-border-radius: 10;
+    -fx-padding: 6 10;
+    -fx-font-size: 14px;
+    -fx-border-color: #ddd;
+    -fx-background-color: white;
+}
+
+.combo-box .list-cell {
+    -fx-font-size: 14px;
+}
+
+.date-picker {
+    -fx-background-radius: 10;
+    -fx-border-radius: 10;
+    -fx-padding: 6 10;
+    -fx-font-size: 14px;
+    -fx-border-color: #ddd;
+    -fx-background-color: white;
+}
+.booking-card {
+    -fx-background-color: white;
+    -fx-background-radius: 12;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.1), 10, 0.2, 0, 4);
+}
+/* Style for the top image with rounded corners */
+.image-view {
+    -fx-background-radius: 10; /* Apply to ImageView if using -fx-background-radius */
+    /* Or apply to a container around the image */
+}
+
+/* Style for rounded text fields */
+.text-field {
+    -fx-background-radius: 10;
+    -fx-border-radius: 10;
+    -fx-background-color: #f0f0f0; /* Example light background */
+    -fx-padding: 8 10; /* Example padding */
+}
+
+/* Style for labels */
+.section-title {
+    -fx-font-size: 18px;
+    -fx-font-weight: bold;
+    -fx-fill: #333;
+}
+
+.details-label {
+    -fx-font-size: 14px;
+    -fx-text-fill: #555;
+}
+
+.time-label {
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+}
+
+.station-label {
+    -fx-font-size: 14px;
+    -fx-text-fill: #333;
+}
+
+.duration-label {
+    -fx-font-size: 14px;
+    -fx-text-fill: #777;
+}
+
+.availability-label {
+    -fx-font-weight: bold;
+    -fx-text-fill: green; /* Example color */
+}
+
+/* Style for the Pay and Book button */
+.search-button { /* Reusing the style class from dashboard */
+    -fx-background-color: #2979ff;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-background-radius: 25;
+    -fx-padding: 10 20;
+}
+
+/* Style for fare details labels */
+/* You can add specific styles for fare labels if needed */
+
+
+/* Style for the Add Traveller button */
+/* Using inline style in FXML for now */
+
+/* Style for the Remove Traveller button */
+/* Using inline style in FXML for now */
+
+/* Style for the booking confirmation dialog */
+.confirmation-dialog .dialog-pane {
+    -fx-background-color: #e8f5e9; /* Light green background */
+    -fx-border-color: #4caf50; /* Green border */
+    -fx-border-width: 2;
+    -fx-border-radius: 10;
+    -fx-background-radius: 10;
+}
+
+.confirmation-dialog .content {
+    -fx-font-size: 16px;
+    -fx-text-fill: #333;
+}
+
+.confirmation-dialog .header-panel {
+    -fx-background-color: #4caf50; /* Green header */
+}
+
+.confirmation-dialog .header-panel .label {
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+}
+.primary-button {
+    -fx-background-color: #2979ff;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-background-radius: 25;
+    -fx-padding: 10 20;
+}
+
+.secondary-button {
+    -fx-background-color: #eeeeee;
+    -fx-font-weight: bold;
+    -fx-text-fill: #333;
+    -fx-background-radius: 10;
+}

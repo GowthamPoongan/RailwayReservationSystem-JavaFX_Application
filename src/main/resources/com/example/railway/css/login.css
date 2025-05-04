@@ -1,0 +1,80 @@
+/* Background wrapper */
+AnchorPane {
+    -fx-background-color: transparent;
+}
+
+/* Glass-style login box */
+.glass-box {
+    -fx-background-color: rgba(255, 255, 255, 0.2);
+    -fx-border-color: rgba(255, 255, 255, 0.35);
+    -fx-border-width: 1.5px;
+    -fx-border-radius: 20;
+    -fx-background-radius: 20;
+    -fx-padding: 35;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.2), 15, 0.3, 0, 4);
+}
+
+
+/* Title text */
+.form-title {
+    -fx-font-size: 28px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #000000;
+}
+
+/* Text inputs */
+.text-field,
+.password-field {
+    -fx-pref-width: 280px;
+    -fx-font-size: 14px;
+    -fx-padding: 12;
+    -fx-border-radius: 12;
+    -fx-background-radius: 12;
+    -fx-border-color: #cbd5e1;
+    -fx-background-color: rgba(255, 255, 255, 0.65);
+}
+
+.button {
+    -fx-background-color: #3b82f6;
+    -fx-text-fill: white;
+    -fx-font-size: 16px;
+    -fx-padding: 14 50;
+    -fx-background-radius: 30;
+    -fx-font-weight: bold;
+}
+
+.forgot-link {
+    -fx-text-fill: #cbd5e1;
+    -fx-font-size: 12px;
+    -fx-alignment: center-right;
+}
+
+.or-label {
+    -fx-text-fill: #f1f5f9;
+    -fx-font-size: 13px;
+}
+
+.signup-label {
+    -fx-font-size: 15px;
+    -fx-text-fill: #e0e7ff;
+}
+
+.signup-link {
+    -fx-text-fill: #ffffff;
+    -fx-font-size: 15px;
+    -fx-font-weight: bold;
+}
+.root {
+    -fx-background-image: url("com/example/railway/images/train-bg.png"); /* updated to correct relative path and added file extension */
+    -fx-background-size: cover;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center center;
+}
+#glassContainer {
+    -fx-background-color: white;
+    -fx-background-radius: 25;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.2), 20, 0.3, 0, 10);
+}
+
+
+

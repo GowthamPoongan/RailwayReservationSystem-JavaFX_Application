@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.control.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.geometry.Pos?>
+<?import javafx.scene.layout.HBox?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.example.railway.controller.loginController"
+            stylesheets="@../css/login.css"
+            prefWidth="1000" prefHeight="650">
+
+    <!-- Background Image -->
+    <ImageView fitHeight="650" fitWidth="1000" preserveRatio="false">
+        <image>
+            <Image url="@../images/train-bg.png" />
+        </image>
+    </ImageView>
+
+    <!-- Glassmorphism Login Container -->
+    <StackPane prefWidth="400" prefHeight="500" layoutX="550" layoutY="75"
+               style="-fx-background-color: white;
+                      -fx-background-radius: 25;
+                      -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.2), 20, 0.3, 0, 10);">
+        <VBox alignment="CENTER" spacing="15">
+            <padding>
+                <Insets top="20" right="20" bottom="20" left="20"/>
+            </padding>
+
+            <Text text="Log in to your account." style="-fx-font-size: 24px; -fx-fill: Black; -fx-font-weight: bold;" />
+
+            <TextField fx:id="emailField" promptText="Email" maxWidth="280"
+                       style="-fx-background-radius: 10;" />
+            <PasswordField fx:id="passwordField" promptText="Password" maxWidth="280"
+                           style="-fx-background-radius: 10;" />
+
+            <Label text="Forgot your password?"
+                   style="-fx-text-fill: black; -fx-font-size: 12px; -fx-alignment: CENTER_RIGHT;" />
+
+            <Button text="Login" onAction="#handleLogin" maxWidth="280"
+                    style="-fx-background-color: #2979ff;
+                           -fx-text-fill: white;
+                           -fx-font-weight: bold;
+                           -fx-background-radius: 25;
+                           -fx-padding: 10 20;" />
+
+            <Label text="Or login with" style="-fx-text-fill: black;" />
+
+            <HBox spacing="10" alignment="CENTER">
+                <ImageView fitHeight="24" fitWidth="24">
+                    <image>
+                        <Image url="@../images/google.png"/>
+                    </image>
+                </ImageView>
+                <ImageView fitHeight="24" fitWidth="24">
+                    <image>
+                        <Image url="@../images/facebook.png"/>
+                    </image>
+                </ImageView>
+                <ImageView fitHeight="24" fitWidth="24">
+                    <image>
+                        <Image url="@../images/apple.png"/>
+                    </image>
+                </ImageView>
+            </HBox>
+
+            <HBox alignment="CENTER">
+                <Label text="Don't have an account?" style="-fx-text-fill: black;" />
+                <Hyperlink text="Create Account" onAction="#handleSignup" />
+            </HBox>
+        </VBox>
+    </StackPane>
+</AnchorPane>

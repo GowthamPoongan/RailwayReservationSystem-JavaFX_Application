@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Priority?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<HBox xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" styleClass="booking-item">
+    <padding>
+        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+    </padding>
+    <GridPane hgap="15.0" vgap="5.0" HBox.hgrow="ALWAYS">
+        <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+        <Label text="Book ID:" styleClass="booking-label-header" GridPane.columnIndex="0" />
+        <Label fx:id="bookingIdLabel" text="[ID]" GridPane.columnIndex="1" />
+        <Label text="Name:" styleClass="booking-label-header" GridPane.columnIndex="2" />
+        <Label fx:id="nameLabel" text="[Name]" GridPane.columnIndex="3" />
+        <Label text="Room:" styleClass="booking-label-header" GridPane.columnIndex="4" />
+        <Label fx:id="roomLabel" text="[Room]" GridPane.columnIndex="5" />
+        <Label text="Check-in:" styleClass="booking-label-header" GridPane.columnIndex="6" />
+        <Label fx:id="checkInLabel" text="[Check-in]" GridPane.columnIndex="7" />
+        <Label text="Check-out:" styleClass="booking-label-header" GridPane.columnIndex="8" />
+        <Label fx:id="checkOutLabel" text="[Check-out]" GridPane.columnIndex="9" />
+        <Label text="Guest:" styleClass="booking-label-header" GridPane.columnIndex="10" />
+        <Label fx:id="guestLabel" text="[Guest]" GridPane.columnIndex="11" />
+        <Label text="Res. Status:" styleClass="booking-label-header" GridPane.columnIndex="12" />
+        <Label fx:id="statusLabel" text="[Status]" GridPane.columnIndex="13" />
+    </GridPane>
+</HBox>

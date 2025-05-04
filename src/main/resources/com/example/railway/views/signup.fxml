@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.control.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.geometry.Pos?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.example.railway.controller.signupController"
+            stylesheets="@../css/signup.css"
+            prefWidth="1000" prefHeight="650">
+
+    <!-- Background Image -->
+    <ImageView fitHeight="650" fitWidth="1000" preserveRatio="false">
+        <image>
+            <Image url="@../images/train-bg.png" />
+        </image>
+    </ImageView>
+
+    <!-- Signup Form Container -->
+    <StackPane prefWidth="400" prefHeight="530" layoutX="550" layoutY="60"
+               style="-fx-background-color: white;
+                      -fx-background-radius: 25;
+                      -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.2), 20, 0.3, 0, 10);">
+        <VBox alignment="CENTER" spacing="15">
+            <padding>
+                <Insets top="20" right="20" bottom="20" left="20"/>
+            </padding>
+
+            <Text text="Create a new account" style="-fx-font-size: 24px; -fx-fill: Black; -fx-font-weight: bold;" />
+
+            <HBox spacing="10" alignment="CENTER">
+                <TextField fx:id="firstNameField" promptText="First Name" maxWidth="130"
+                           style="-fx-background-radius: 10;" />
+                <TextField fx:id="lastNameField" promptText="Last Name" maxWidth="130"
+                           style="-fx-background-radius: 10;" />
+            </HBox>
+
+            <TextField fx:id="emailField" promptText="Email" maxWidth="280"
+                       style="-fx-background-radius: 10;" />
+
+            <PasswordField fx:id="passwordField" promptText="Password" maxWidth="280"
+                           style="-fx-background-radius: 10;" />
+
+            <PasswordField fx:id="confirmPasswordField" promptText="Confirm Password" maxWidth="280"
+                           style="-fx-background-radius: 10;" />
+
+            <Button text="Create Account" onAction="#handleSignup" maxWidth="280"
+                    style="-fx-background-color: #2979ff;
+                           -fx-text-fill: white;
+                           -fx-font-weight: bold;
+                           -fx-background-radius: 25;
+                           -fx-padding: 10 20;" />
+
+            <Label fx:id="statusLabel" text="" style="-fx-text-fill: red; -fx-font-size: 12px;" />
+
+            <HBox alignment="CENTER">
+                <Label text="Already have an account?" style="-fx-text-fill: black;" />
+                <Hyperlink text="Log in" onAction="#goToLogin" />
+            </HBox>
+        </VBox>
+    </StackPane>
+</AnchorPane>
